@@ -1,4 +1,4 @@
-# CS50W - Google Search Prototype
+# CS50W - Google Search
 
 **Objective**: Design a front-end for Google Search, Google Image Search, and Google Advanced Search
 
