@@ -15,7 +15,8 @@ html {
 
 a {
     text-decoration: none; /*It removes the underline*/
-    color: grey;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -48,4 +49,40 @@ a {
     grid-area: sign-in;
     justify-self: center;
     align-self: center;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*3 equal sized squares*/
+    grid-template-rows: 200px 70px 70px 200px; /*empty - search bar - buttons - language*/
+    grid-template-areas: 
+    ". google-logo ."
+    ". google-search"
+    ". flexbox ."
+    ". google-language-text .";
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%
+    }
+
+#google-logo {
+    grid-area: google-logo;
+}
+#google-search {
+    grid-area: google-search;
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+}
+#google-search-button {
+}
+#feeling-lucky-button {
+}
+#google-language-text {
+    grid-area: google-language-text;
 }
